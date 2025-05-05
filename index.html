@@ -1,106 +1,83 @@
 <!DOCTYPE html>
 <html lang="sr">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="TransportZona – poslovna platforma koja povezuje usluge transporta, šlep službi, auto-servisa i smeštaja na teritoriji Srbije i regiona.">
-  <meta name="keywords"
-    content="Transport, Srbija, Šlep služba, Auto-servis, Prenoćište, Selidbe, TransportZona, Logistika, Beograd, Auto pomoć">
-  <meta name="author" content="TransportZona Team">
-  <title>TransportZona | Povezivanje Transportnih i Servisnih Usluga</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/script.js"></script>
-  <link rel="icon" type="image/png" href="images/logo.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="TransportZona – poslovna platforma za transport, šlep službe, servise i smeštaj u Srbiji i regionu. Povezivanje bez posrednika i provizije." />
+  <meta name="keywords" content="Transport, Šlep služba, Auto servis, Prenoćište, Srbija, Region, Platforma, Povezivanje, Članstvo, Beograd, Novi Sad, Niš, Kamion, Kombi, Mehaničar, Selidbe" />
+  <meta name="author" content="TransportZona" />
+
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:title" content="TransportZona – Transport i servisna mreža Srbije i regiona" />
+  <meta property="og:description" content="Bez posrednika, bez provizije. Direktan kontakt sa pružaocima usluga u transportu i servisima širom Srbije i regiona." />
+  <meta property="og:image" content="kamion-zona.jpg" />
+  <meta property="og:url" content="https://transportzonalogistic.vercel.app/" />
+  <meta property="og:type" content="website" />
+
+  <title>TransportZona | Platforma za transport i usluge</title>
+  <link rel="icon" href="logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="hero" id="pocetna">
+  <header class="hero">
     <nav class="navbar">
       <div class="logo">
-        <img src="images/logo.jpg" alt="TransportZona Logo">
+        <img src="logo.jpg" alt="TransportZona logo" />
       </div>
+      <button class="nav-toggle" aria-label="Open navigation">
+        <span class="hamburger"></span>
+      </button>
       <ul class="nav-links">
         <li><a href="#pocetna">Početna</a></li>
         <li><a href="#o-nama">O nama</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
-        <li><a href="#prijava" class="cta">Prijava</a></li>
+        <li><a href="#prijava">Prijava</a></li>
       </ul>
     </nav>
     <div class="hero-content">
       <h1>TransportZona</h1>
-      <p>Sistem povezivanja transportnih i servisnih usluga širom Srbije i regiona.</p>
+      <p>Sistem povezivanja transportnih i servisnih usluga Srbije i regiona</p>
       <a href="#prijava" class="btn-primary">Postani član</a>
     </div>
   </header>
 
-  <section class="about" id="o-nama">
+  <section id="o-nama" class="section reveal">
     <div class="container">
       <h2>O nama</h2>
-      <p>
-        TransportZona je poslovna platforma koja eliminiše posrednike, povezuje pružaoce usluga transporta, šlepa,
-        auto-servisa i smeštaja, omogućavajući direktnu komunikaciju, fer članstvo i tehničku podršku 24/7.
-      </p>
-      <ul>
-        <li>Selidbe (lokalne, međunarodne)</li>
-        <li>Šlep službe dostupne 24/7</li>
-        <li>Auto-servisne delatnosti</li>
-        <li>Kratkoročni smeštaj za vozače</li>
-      </ul>
+      <p>TransportZona je poslovna platforma koja eliminiše posrednike, povezuje korisnike sa direktnim pružaocima usluga iz oblasti transporta, servisa i smeštaja na teritoriji Srbije i regiona.</p>
     </div>
   </section>
 
-  <section class="map">
-    <div class="container">
-      <h2>Gde poslujemo?</h2>
-      <p>TransportZona funkcioniše u Srbiji i širi se ka: BiH, Crnoj Gori, Makedoniji, Hrvatskoj, Rumuniji, Bugarskoj, Sloveniji...</p>
-      <img src="images/mapa.jpg" alt="Mapa regiona">
-    </div>
-  </section>
-
-  <section class="contact" id="kontakt">
+  <section id="kontakt" class="section reveal">
     <div class="container">
       <h2>Kontakt</h2>
-      <p>Na raspolaganju smo 24/7 za sve vaše potrebe i pitanja.</p>
-      <div class="contact-options">
-        <div>
-          <h3>Adresa</h3>
-          <p>Beograd, Srbija</p>
-        </div>
-        <div>
-          <h3>Telefon</h3>
-          <p>+381 64 123 4567</p>
-        </div>
-        <div>
-          <h3>Email</h3>
-          <p>kontakt@transportzona.rs</p>
-        </div>
-      </div>
+      <p>Imate pitanje? Tu smo za vas 24/7!</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Vaše ime" required>
+        <input type="email" placeholder="Email adresa" required>
+        <textarea placeholder="Vaša poruka" rows="5" required></textarea>
+        <button type="submit">Pošalji</button>
+      </form>
     </div>
   </section>
 
-  <section class="signup" id="prijava">
+  <section id="prijava" class="section reveal">
     <div class="container">
-      <h2>Prijavi se</h2>
-      <p>Popuni Google formu i postani deo TransportZona mreže:</p>
-      <a href="https://forms.gle/Nv68jxMNj5VK32n78" target="_blank" class="btn-secondary">Prijava putem Google forme</a>
+      <h2>Prijava za članstvo</h2>
+      <p>Pristup mreži, kontakt centru i promociji kroz TransportZona sistem.</p>
+      <a href="https://forms.gle/Nv68jxMNj5VK32n78" target="_blank" class="btn-secondary">Popunite prijavu</a>
     </div>
   </section>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
       <p>&copy; 2025 TransportZona. Sva prava zadržana.</p>
-      <div class="socials">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-      </div>
     </div>
   </footer>
-</body>
 
+  <script src="script.js"></script>
+</body>
 </html>
