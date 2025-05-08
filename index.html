@@ -1,104 +1,78 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Kamion Zona - profesionalne usluge transporta i logistike">
-    <title>Kamion Zona</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transport Zona</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="AIzaSyD1atIFJfdfxqMk42FtLsr_9NN4jNulz5A" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <img src="logo.png" alt="Kamion Zona" class="logo">
-            <ul class="nav-links">
-                <li><a href="#home">Početna</a></li>
-                <li><a href="#about">O nama</a></li>
-                <li><a href="#services">Usluge</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero" id="home">
-        <div class="hero-content reveal">
-            <h1>Dobrodošli u Kamion Zona</h1>
-            <p>Profesionalne usluge transporta i logistike</p>
-            <a href="#contact" class="cta-button">Kontaktirajte nas</a>
-        </div>
-    </section>
-
-    <section class="section" id="about">
-        <h2 class="reveal">O nama</h2>
-        <p class="reveal">Kamion Zona nudi brzu i sigurnu uslugu transporta. Naš tim ima dugogodišnje iskustvo u industriji, sa flotom modernih kamiona spremnih za svaki izazov.</p>
-    </section>
-
-    <section class="section" id="services">
-        <h2 class="reveal">Naše Usluge</h2>
+  <header id="top">
+    <div class="container">
+      <div class="logo"> Transport Zona</div>
+      <nav>
         <ul>
-            <li class="reveal">Transport tereta</li>
-            <li class="reveal">Logističke usluge</li>
-            <li class="reveal">Iznajmljivanje kamiona</li>
+          <li><a href="#usluge">Usluge</a></li>
+          <li><a href="#clanarine">Članarine</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="#pristup" class="btn-small">Pristupi</a></li>
         </ul>
-    </section>
+      </nav>
+    </div>
+  </header>
 
-    <section class="section" id="contact">
-        <h2 class="reveal">Kontaktirajte nas</h2>
-        <form>
-            <input type="text" placeholder="Ime" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Poruka" required></textarea>
-            <button type="submit" class="btn">Pošaljite</button>
-        </form>
-    </section>
+  <section class="hero">
+    <img src="kamion-zona.webp" alt="Kamion Transport Zona" />
+    <div class="hero-text fade-in">
+      <h1>Vaš partner za sve vrste transporta</h1>
+      <p>Pokrivamo Srbiju i EU – 24/7 dostupnost</p>
+      <a href="#pristup" class="btn">Postani partner</a>
+    </div>
+  </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Kamion Zona. Sva prava zadržana.</p>
-    </footer>
+  <section id="usluge">
+    <h2>Naše usluge</h2>
+    <div class="services">
+      <div class="service-card fade-in"><h3>Prevoz robe</h3><p>Građevinski materijal, oprema, nameštaj...</p></div>
+      <div class="service-card fade-in delay1"><h3>Vangabaritni teret</h3><p>Skela, krovni sistemi, teh. podrška...</p></div>
+      <div class="service-card fade-in delay2"><h3>Selidbe i EU rute</h3><p>Kombi prevoz, radnici, montaža...</p></div>
+      <div class="service-card fade-in delay3"><h3>Šlep služba</h3><p>24h pomoć, transport vozila, moto-šlep...</p></div>
+    </div>
+  </section>
 
-    <script src="scripts.js"></script>
+  <section id="clanarine">
+    <h2>Model članstva</h2>
+    <table>
+      <thead><tr><th>Tip</th><th>Period</th><th>Cena</th><th>Pogodnosti</th></tr></thead>
+      <tbody>
+        <tr><td>BASIC</td><td>1 mesec</td><td>3.000</td><td>Osnovna promocija</td></tr>
+        <tr><td>STANDARD</td><td>6 meseci</td><td>9.000</td><td>Redovna promocija, prioritet</td></tr>
+        <tr><td>PREMIUM</td><td>12 meseci</td><td>18.000</td><td>Baneri, EU poslovi, full podrška</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="pristup">
+    <h2>Pristupni formular</h2>
+    <p>Popunite online prijavu da postanete naš saradnik.</p>
+    <a href="https://forms.gle/rN5QsS2hjpvFsNnC7" target="_blank" class="btn">Pristupi mreži</a>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <div class="kontakt-info">
+      <p><strong>📞 Telefon:</strong> +381 60 123 4567</p>
+      <p><strong>📧 Email:</strong> info@transportzona.rs</p>
+      <p><strong>📍 Adresa:</strong> Beograd, Srbija</p>
+    </div>
+    <div id="map"></div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Transport Zona. Sva prava zadržana.</p>
+  </footer>
 </body>
 </html>
-<style>
-    body {
-        font-family: 'Poppins', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    header {
-        background-color: #333;
-        color: white;
-        padding: 10px 20px;
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo {
-        width: 150px;
-    }
-
-    .nav-links {
-        list-style-type: none;
-        display: flex;
-        gap: 20px;
-    }
-
-    .nav-links a {
-        color: white;
-        text-decoration: none;
-    }
-
-    .hero {
-        background-image: url('hero.jpg');
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
